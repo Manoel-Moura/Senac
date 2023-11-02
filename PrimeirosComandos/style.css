@@ -1,0 +1,39 @@
+
+
+div{
+   
+    width: 70px;
+    height: 70px;
+    position: fixed;
+   
+   
+}
+
+
+
+#div1{ 
+ 
+    background-color: crimson;
+    
+}
+
+#div2{ 
+    background-color: aqua;
+    bottom: 0;
+   
+}
+
+#div3{ 
+
+    background-color: chartreuse;
+    top: 0;
+    right:  0;
+}  
+
+#div4{ 
+  
+    background-color: darkmagenta;
+    bottom: 0;
+    right:  0;
+    
+}

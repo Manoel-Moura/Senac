@@ -42,7 +42,7 @@ html,body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #003459;
+    background-color: #01468a;
     width: 100%;
     min-height: 100vh;
 }
@@ -50,12 +50,10 @@ html,body{
 
 
 .row-item{
-    
-    margin: 5mm;
-    width: 60mm;
-    height: 60mm;
-    background-color: #1b4564;
-    border-radius: 50mm;
+    width: 120mm;
+    height: 150mm;
+    background-color: #ffffff;
+    border-radius: 5mm;
 }
 
 #footer{
@@ -71,7 +69,7 @@ h1{
 
 #logo{
     margin-right: 40px;
-    margin-left: 20px;
+    margin-left: 5%;
     width: 80px;
     height: 40px;
 }

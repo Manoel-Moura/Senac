@@ -1,3 +1,10 @@
+
+/*
+    Azul, laranja e branco
+    #fac17e, #ef8a01, #01468a, #fefefe
+
+*/
+
 *{
     margin: 0;
     padding: 0;
@@ -6,23 +13,25 @@
 html,body{
     width: 100%;
     min-height: 100vh;
-    background-color: #00171f;
+    background-color: #ffffff;
 }
 
 #container{
-    margin: 1%;
+   
     width: 100%;
     height: 100%;
 
 }
 
 #topo{
-    margin: -1%;
+    display: flex;
+    justify-items: center;
+    justify-content: flex-start;
     width: 100%;
     height: 20mm;
-    background-color: #00171f;
+    background-color: #ffffff;
     align-items: center;
-    justify-content: center;
+    
 }
 
 .row{
@@ -34,9 +43,8 @@ html,body{
     justify-content: center;
     align-items: center;
     background-color: #003459;
-    width: 98%;
+    width: 100%;
     min-height: 100vh;
-    margin-top: 1%;
 }
 
 
@@ -52,14 +60,33 @@ html,body{
 
 #footer{
     width: 100%;
-    margin: -1%;
     height: 30mm;
-    background-color: #00171f;
-    
-
+    background-color: #01468a;
 }
 
 h1{
     color: aliceblue;
     
 }
+
+#logo{
+    margin-right: 40px;
+    margin-left: 20px;
+    width: 80px;
+    height: 40px;
+}
+
+.botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 100px;
+    background-color: #ffffff;
+    border-radius: 2mm;
+    color: #01468a;
+    font-size: large;
+    margin-left: 8px;
+
+}
+

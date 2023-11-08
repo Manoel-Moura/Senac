@@ -1,0 +1,183 @@
+
+/*
+    Azul, laranja e branco
+    #fac17e, #ef8a01, #01468a, #fefefe
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14pt;
+}
+
+html,body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+#container{
+   
+    width: 100%;
+    height: 100%;
+
+}
+
+#topo{
+    display: flex;
+    justify-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 20mm;
+    background-color: #ffffff;
+    align-items: center;
+    border-bottom: 5px solid #F78B1F;
+    
+}
+
+.row{
+    padding-top: 5mm;
+    padding-bottom: 5mm;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #01468a;
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+
+.row-item{
+    width: 100mm;
+    height: 130mm;
+    background-color: #ffffff;
+    border-radius: 5mm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+#footer{
+    width: 100%;
+    height: 30mm;
+    background-color: #01468a;
+}
+
+h1{
+    color: aliceblue;
+    
+}
+
+#logo{
+    margin-right: 40px;
+    margin-left: 5%;
+    width: 80px;
+    height: 40px;
+}
+
+.botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 100px;
+    background-color: #ffffff;
+    border-radius: 2mm;
+    color: #01468a;
+    font-size: large;
+    margin-left: 8px;
+    border: #ffffff;
+
+}
+
+.botao:hover {
+    transform: scale(1.1);
+    background-color: #01468a;
+    color: #ffffff;
+  }
+
+  .caixaTexto{
+    border-radius: 8px;
+    padding-left: 5mm;
+    height: 8mm;
+    width: 60mm;
+    background-color: rgba(255, 255, 255, 0.37);
+    font-weight: 500;
+  }
+
+  .label{
+    display: flex;
+    align-self: flex-start;
+    margin-left: 17mm;
+    margin-bottom: 1mm;
+    margin-top: 1mm;
+    color: #01468a;
+    font-size: 12pt;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  #botao{
+    border-radius: 8px;
+    margin-top: 8mm;
+    height: 8mm;
+    width: 20mm;
+    background-color: #ffffff;
+  }
+  
+
+  #logoPrincipal{
+    height: 17mm;
+    width: 30mm;
+    display: flex;
+   margin-bottom: 5mm;
+   margin-top: 5mm;
+
+   
+  }
+
+  .tex{
+    color: #000000;
+  }
+
+  #login{
+    color: orange;
+    margin-left: 2mm;
+    margin-right: 2mm;
+  }
+
+  #tex1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 5mm;
+    align-self: start;
+    margin-left: 17mm;
+ 
+  }
+
+  #icon{
+    height: 5mm;
+    width: 5mm;
+    margin-right: 2mm;
+  }
+
+  .textoCadastro{
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    margin-top: 2mm;
+  }
+
+  #tex2{
+    margin-top: 8mm;
+  }

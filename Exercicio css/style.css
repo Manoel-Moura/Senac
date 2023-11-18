@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body, #container{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.workspace{
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    margin: 5mm;
+    border: 1px solid #666;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+#bg{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#quadrado{
+    width: 40%;
+    height: 40%;
+    background-color: black;
+}
+
+#ex2{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+}
+
+#ex2-interno{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 500%;
+}
+
+#ex3{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#div-vermelha{
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 200%;
+    background-color: rgb(255, 0, 0);
+}
+
+#div-verde{
+    width: 100%;
+    height: 25%;
+    background-color: aquamarine;
+}
+
+#div-vermelha2{
+    width: 50%;
+    height: 100%;
+    border-bottom-right-radius: 200%;
+    background-color: rgb(255, 0, 0);
+}
+
+#div-amarela{
+    width: 50%;
+    height: 100%;
+    border-bottom-right-radius: 200%;
+    background-color: rgb(238, 255, 3);
+}
+
+#div-rosa{
+    width: 50%;
+    height: 100%;
+    border-bottom-right-radius: 200%;
+    background-color: rgb(255, 0, 208);
+}
+
+#ex4{
+    width: 100%;
+    height: 100%;
+   
+}
+
+#olho-vermelho{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+}
+
+#olho{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: rgb(126, 8, 8);
+}
+
+#ex5{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    rotate: 45deg;
+    
+}
+
+#quadrado-aqua{
+    width: 71%;
+    height: 71%;
+    
+    background-color: aquamarine;
+}
+
+#ex6{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#quadrado1{
+    width: 50%;
+    height: 50%;
+    border-bottom-right-radius: 100%;
+    background-color: rgb(182, 18, 18);
+}
+
+#quadrado2{
+    width: 50%;
+    height: 50%;
+    border-bottom-left-radius: 100%;
+    background-color: rgb(182, 18, 18);
+}
+
+#quadrado3{
+    width: 50%;
+    height: 50%;
+    border-top-right-radius: 100%;
+    background-color: rgb(182, 18, 18);
+}
+
+#quadrado4{
+    width: 50%;
+    height: 50%;
+    border-top-left-radius: 100%;
+    background-color: rgb(182, 18, 18);
+}
+
+
+
+#ex7{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+ justify-content: center;
+ rotate: 45deg;
+    
+}
+
+#bola-vermelha2{
+    width: 50%;
+    height: 50%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    background-color: red;
+}
+
+#ex8{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+ justify-content: center;
+ rotate: 45deg;
+    
+}
+
+#bola-vermelha{
+    width: 50%;
+    height: 50%;
+    border-top-left-radius: 100%;
+    background-color: red;
+}
+
+#ex9{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+ justify-content: center;
+}
+
+#triangulo{
+    width: 0;
+    height: 0;
+    border-right: 250px solid rgba(0, 0, 255, 0);
+    border-bottom: 250px solid rgb(198, 0, 252);
+}
+
+#ex10{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+ justify-content: center;
+}
+
+#triangulo2{
+    width: 0;
+    height: 0;
+    border-right: 250px solid rgb(255, 255, 255);
+    border-bottom: 0px solid rgb(198, 0, 252);
+    border-top: 500px solid red;
+    border-left: 250px solid rgb(255, 255, 255);
+}
+
+
+
+#ex11{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+ justify-content: center;
+}
+
+#triangulo3{
+    width: 0;
+    height: 0;
+    border-color: 3px solid white;
+    border-right: 250px solid rgb(255, 255, 255);
+    border-bottom: 500px solid rgb(252, 0, 0);
+    border-top: 0px solid rgb(255, 255, 255);
+    border-left: 250px solid rgb(255, 255, 255);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+#ex12{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lua{
+    width: 60%;
+    height: 60%;
+ 
+    background-color: white;
+    border-start-end-radius: 50%;
+    border-bottom-right-radius: 50%;
+    display: flex;
+    align-items: center;
+    border-color: black;
+    justify-content: flex-start;
+}
+
+#lua-preta{
+    width: 80%;
+    height: 100%;
+    border-color: black;
+    background-color: rgb(0, 0, 0);
+    border-start-end-radius: 50%;
+    border-bottom-right-radius: 50%;
+   
+}
+
+#ex13{
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+}
+
+#circulo{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgb(0,0,0);
+background: linear-gradient(360deg, rgba(0,0,0,0.9808298319327731) 0%, rgba(0,0,0,1) 50%, rgba(255,245,245,1) 50%, rgba(255,255,255,1) 100%);
+    border: 10px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ying{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#yang{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#yang2{
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+#ying2{
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    
+}
+/* https://css-exercice.netlify.app/ */

@@ -1,0 +1,74 @@
+:root{
+    --bg-div-02: linear-gradient(red,blue);
+    --button-small: 5mm;
+    --button-medium: 8mm;
+    --button-large: calc(var(--button-small) + var(--button-medium));
+}
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /* box-sizing: border-box;  Ah borda fica dentro da div, ou seja, não ocupa espaço adicional*/
+
+}
+
+html,body{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#container{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+
+   
+}
+
+/* #container *{
+    padding: 5mm;
+} */
+
+#container div{
+    width: 300px;
+    border: 1px solid #999;
+    /* flex-grow: 0; */
+    flex-shrink: 0;
+    
+
+}
+
+#container #d-02{
+    /* flex-grow: 2; */
+    flex-shrink: 0;
+    background: var(--bg-div-02);
+}
+
+#container #d-01{
+    background-color: chocolate;
+    transition: 3s;
+    
+}
+
+#container #d-01:hover {
+    background:  var(--bg-div-02);
+    border-radius: 100%;
+}
+
+.small{
+    padding: var(--button-small);
+}
+
+.medium{
+    padding: var(--button-medium);
+}
+
+.large{
+    padding: var(--button-large);
+}

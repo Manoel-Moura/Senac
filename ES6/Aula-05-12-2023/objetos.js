@@ -7,8 +7,15 @@ const filme = {
     titulo: 'JSON x XML',
     resumo: 'o duelo de dois modelos de representação de informações',
     ano: 2012,
-    genero: ['aventura', 'ação', 'ficção']
+    genero: ['aventura', 'ação', 'ficção'],
+    filme2: {
+        titulo: 'JSON James',
+        resumo: 'a história de uma lenda do velho oeste',
+        ano: 2012,
+        genero: ['western']
+    }
 }
+
 
 const filme2 = {
     titulo: 'JSON James',
@@ -17,6 +24,10 @@ const filme2 = {
     genero: ['western']
 }
 
-console.log(filme)
+objetos.peso = '100kg'
 
-console.log(filme2)
+console.log(objetos)
+// console.log(filme)
+
+// console.log(filme2)
+

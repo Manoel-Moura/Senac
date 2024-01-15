@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Lista de Tarefas</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <form v-on:submit.prevent="criarTarefa()"> 
+            <input type="text" placeholder="Tarefa" /> 
+            <label class="checkbox-input" v-model="form.texto"> 
+                {{ form.status == true ? 'Concluída' :  'Não concluída'  }}
+                <input type="checkbox" v-model="form.status" v-bind:checked="tarefa.status"/> 
+                <span class="checkmark"></span> 
+            </label> 
+            <button type="submit">Adicionar</button> 
+        </form>
+        <ul class="tarefas"> 
+            <span class="todos-title">Tarefas</span> 
+            <li v-bind:class="[tarefa, {concluida: tarefa.status== true }]" v-for="tarefa in tarefas"> 
+                <label class="checkbox-input">   
+                    <input type="checkbox" v-bind:checked="tarefa.status == true" v-on:atualizarTarefa(tarefa) /> 
+                    <span class="checkmark"></span> 
+                </label> 
+                <span class="tarefa-texto">Beber água</span> 
+                <a class="tarefa-delete" v-on:click="deletarTarefa(tarefa.id)"></a>
+            </li> 
+        </ul>
+        
+    </div>
+    <script src="bundle.js"></script>
+</body>
+</html>

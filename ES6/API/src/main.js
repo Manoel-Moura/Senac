@@ -1,26 +1,48 @@
-console.log("Olá mundo")
-
-class Pessoa {
-    digaOlá() {
-        console.log("Oiiii")
+// main.js 
+import Tarefas from './api/tarefas'
+import './assets/css/estilos.css'
+const apiTarefas = new Tarefas()
+import { createApp } from 'vue'
+const app = createApp({
+    data(){
+        return {
+            tarefas: [],
+            form: {
+                texto: '',
+                status: false
+            }
+        }
+    },
+    created(){
+        this.buscarTarefas()
+    },
+    methods: {
+        async buscarTarefas(){ 
+            this.tarefas = await apiTarefas.list()
+        },
+        async criarTarefa(){   
+            const novaTarefa = this.tarefas = await apiTarefas.create(this.form) 
+            this.tarefas.push(novaTarefa)
+            // Limpando o formulário
+            this.form.texto = ''
+            this.form.status = false 
+        },
+        async atualizarTarefa(tarefa){
+            const tarefaAtualizada = await apiTarefas.update({
+              ...tarefa,
+              status: !tarefa.status 
+            })
+            const index = this.tarefas.findIndex( ({ id }) => id == tarefaAtualizada.id ) 
+            this.tarefas[index] = tarefaAtualizada
+                 
+        },
+        async deletarTarefa(id){
+            // Excluindo na base.
+            await apiTarefas.delete({id}) // Preciso criar um objeto para desentruturar lá no método.
+            // Excluindo no template.
+            const index = this.tarefas.findIndex( (tarefa) => tarefa.id == id )
+            this.tarefas.splice(index, 1) // Deletando do array
+        }
     }
-}
-
-const botaoJs = document.createElement('button')
-botaoJs.innerText = 'Botão JS'
-
-
-
-const divJs = document.createElement('div')
-divJs.setAttribute("id", "divJs")
-
-const paragrafoJS = document.createElement('p')
-paragrafoJS.innerText = 'Francisco Manoel Portela Moura Alves de Carvalho'
-
-document.body.append(botaoJs)
-document.body.append(divJs)
-document.body.append(paragrafoJS)
-
-setTimeout(() => {
-    location.reload();
-}, 2000)
+})
+app.mount("#app") // Montando a aplicação.

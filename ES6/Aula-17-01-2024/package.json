@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.3",
+    "sucrase": "^3.35.0"
+  },
+  "exemplo": "nodemon --exec sucrase-node params.js",
+  "scripts": {
+    "start": "nodemon --exec sucrase-node params.js"
+  }
+  
+}

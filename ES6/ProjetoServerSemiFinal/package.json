@@ -1,0 +1,19 @@
+{
+  "name": "ProjetoServerSemiFinal",
+  "version": "1.0.0",
+  "description": "Projeto vai servir de Base para o projeto do Site de culinária de vocês!",
+  "main": "index.js",
+  "author": "Francisco Manoel Portela Moura Alves de Carvalho",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3",
+    "sucrase": "^3.35.0"
+  },
+  "scripts": {
+    "start": "nodemon --exec sucrase-node src/server.js"
+  }
+}
